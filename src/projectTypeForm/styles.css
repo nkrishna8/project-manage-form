@@ -1,0 +1,199 @@
+/* .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  .new-client{
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: darkgray;
+
+  }
+
+  b {
+    text-align: left;
+    margin-top: 20px;
+    /* margin-bottom: 19px; */
+}
+/* .checkbox-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+} */
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 60px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+b {
+    text-align: left;
+    margin-top: 20px;
+    /* margin-bottom: 19px; */
+}
+
+label input,
+label select,
+label textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 11px;
+    border-radius: 8px;
+}
+
+.client-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-select select {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.date-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.date-inputs input {
+    width: 45%;
+}
+
+.date-inputs span {
+    margin: 0 10px;
+}
+
+.form-navigation {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 40px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    /* flex: 1; */
+  }
+  
+  .next-button {
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(61, 165, 226);
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    /* flex: 1; */
+  }
+
+  .threshold-input {
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+@media (max-width: 600px) {
+    .date-inputs {
+        flex-direction: column;
+    }
+
+    .date-inputs input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .date-inputs span {
+        display: none;
+    }
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tabs button:not(:last-child) {
+    margin-right: 2px;
+  }
+  
+  .tabs button.active {
+    background: #007bff;
+    color: #fff;
+    border-bottom: 1px solid #007bff;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    background: #fff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .tabs {
+      flex-direction: column;
+    }
+  
+    .tabs button {
+      border-radius: 5px;
+      margin-bottom: 2px;
+    }
+  
+    .tabs button.active {
+      border-bottom: none;
+    }
+  
+    .tab-content {
+      border-top: none;
+    }
+  }
+  
